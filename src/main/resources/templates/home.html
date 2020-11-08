@@ -6,18 +6,6 @@
     <title>Taco Cloud</title>
 </head>
 <body>
-    <h1>Welcome</h1>
-
-    <h3>Designate your wrap:</h3>
-    <div th:each="ingredient:${wrap}">
-        <input name="ingredients" type="checkbox" th:value="${ingredient.id}"/>
-        <span th:text="${ingredient.name}">INGREDIENT</span><br/>
-    </div>
-
-    <div>
-        <input name="ingredients" type="checkbox" th:value="FLTO"/>
-        <span>Flour Tortilla</span><br/>
-    </div>
-
+<h1>Welcome</h1>
 </body>
 </html>
