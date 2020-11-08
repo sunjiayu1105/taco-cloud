@@ -1,11 +1,13 @@
 package tacos;
 
+import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
+@Data
 public class Order {
     @NotBlank(message = "Name is required")
     private String name;

@@ -46,10 +46,10 @@ public class DesignTacoController {
         return ingredients.stream().filter(x -> x.getType().equals(type)).collect(Collectors.toList());
     }
 
-    @PostMapping()
+    @PostMapping
     public String processDesign(@Valid Taco design, Errors errors) {
         if (errors.hasErrors()) {
-            return "orderForm";
+            return "design";
         }
         log.info("Processing design: " + design);
         return "redirect:/orders/current";
